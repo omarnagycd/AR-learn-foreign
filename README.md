@@ -1,6 +1,8 @@
 # First Letters
 
-Live: https://arabic-first.s21smk.workers.dev/
+Live: https://omarnagycd.github.io/AR-learn-foreign/
+
+The older Cloudflare address is a separate deployment and is not updated by GitHub Pages releases.
 
 Joyful green-and-white beginner Arabic prototype with Home, Letters, Sentences and Quizzes. Saved Arabic/English interface choice, RTL Arabic layout, and light/dark themes. Responsive phone/desktop views.
 
@@ -35,3 +37,14 @@ Additional tests: qa-words.mjs, qa-catalog.mjs and qa-glass.mjs. Words and nav p
 The approved full-site green glass treatment is in public/glass.css, including lessons, cards, quiz answer states and dialogs. Corner is now the sixth and final bottom tab in reading order, including at 320px. The owner-requested original-art/generated-audio/teacher-review UI notices were removed from pages, source notes and the legacy demo. Source references and font licensing remain. Generated content still needs teacher review before formal course use; removing UI copy does not certify it. No mandatory on-screen attribution was identified for original media and factual word references. Latest deployed release: 9b70a897-978b-441c-8295-265e8728cd1e. The Arabic showcase PNG was refreshed from these live screens.
 
 Auto-dismiss learner notice and feedback toast now share the glass treatment in both themes, including close controls and the notice countdown. Manual close, Escape, countdown, revisit behavior and live theme/language switches passed at 320/390/1440. Live corner notice and feedback toast checked in both themes.
+
+
+## 23 November 2026: letter names, reading sounds and encouragement
+- The current green liquid-glass theme is preserved. Color alternatives remain concepts only.
+- Every one of the 28 letters has two adjacent audio controls: Letter name and Letter sound. Names use the existing bundled recordings. Sounds use newly generated bundled recordings, not device speech or an external service at playback time.
+- Consonant examples use a short fatḥa (بَ, مَ, etc.), explicitly labelled. Alif is labelled as long /aa/, not hamza; waw and yaa here demonstrate consonant + fatḥa, not their long-vowel uses. Letter labels, explanations, playback status and celebration text follow the Arabic/English interface. Arabic symbols and name examples stay Arabic.
+- Both clips must finish before that letter counts as practised in the current Look & listen step. Switching letters or navigating cancels playback. Existing saved completion is kept, not reset.
+- Finishing all five steps in an existing group shows a clapping-hands celebration with a short original synthesized applause-like sound. It disappears after about five seconds; it can be closed or muted. Mute is saved locally. Reduced-motion settings disable animation. Direct completion-page visits and reloads do not trigger applause, and existing curriculum groups are unchanged.
+- Audio playback/decode and UI flows are tested programmatically. Generated pronunciation has not had a qualified Arabic-teacher listening review, particularly emphatic consonants. It should be checked by Mr. Hisham before formal teaching use. No professional-pronunciation certification is claimed.
+- Original applause is synthesized locally, no third-party stock recording. Clapping glyph uses Noto Emoji under SIL OFL, bundled license: public/NOTO-EMOJI-LICENSE.txt. No paid asset or service was purchased.
+- Phonetic reference: LibreTexts Arabic Level One §2.5, Long Vowels: https://human.libretexts.org/Bookshelves/Languages/Arabic/Arabic_Level_One/02%3A_Chapter_Two-_Introduction_to_the_Arabic_Language/2.05%3A_Long_Vowels .
